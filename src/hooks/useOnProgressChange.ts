@@ -32,7 +32,7 @@ export function useOnProgressChange(
             if (!loop) {
                 value = Math.max(
                     -((rawDataLength - 1) * size),
-                    value
+                     Math.min(value, -2)
                 );
             }
 
