@@ -29,7 +29,9 @@ export function useOnProgressChange(
                 autoFillData,
                 loop,
             });
-
+console.log('===================')
+              console.log('Release!')
+              console.log('===================')
             if (!loop) {
                 value = Math.max(
                     -((rawDataLength - 1) * size),
