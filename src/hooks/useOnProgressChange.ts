@@ -36,7 +36,7 @@ export function useOnProgressChange(
                 );
             }
 
-            let absoluteProgress = Math.abs(value / size);
+            let absoluteProgress = value / size;
 
             if (value > 0) {
                 absoluteProgress = rawDataLength - absoluteProgress;
