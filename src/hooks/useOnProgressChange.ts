@@ -32,11 +32,11 @@ export function useOnProgressChange(
             if (!loop) {
                 value = Math.max(
                     -((rawDataLength - 1) * size),
-                     Math.min(value, -2)
+                     value
                 );
             }
 
-            let absoluteProgress = value / size;
+            let absoluteProgress = Math.abs(value / size);
 
             if (value > 0) {
                 absoluteProgress = rawDataLength - absoluteProgress;
